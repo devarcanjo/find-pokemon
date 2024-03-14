@@ -13,5 +13,6 @@ declare module "@mui/material/styles" {
 
   interface PaletteOptions {
     primaryLight: string;
+    status: ThemeStatusColor;
   }
 }
