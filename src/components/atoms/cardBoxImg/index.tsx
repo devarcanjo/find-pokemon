@@ -8,9 +8,7 @@ export type Skyjustify =
   | "space-between";
 
 interface Props {
-  header?: React.ReactElement;
   content?: React.ReactElement;
-  footer?: React.ReactElement;
   justify?: Skyjustify;
   height?: string;
   transparent?: boolean;
@@ -18,9 +16,7 @@ interface Props {
 }
 
 export const CardBoxImg = ({
-  header,
   content,
-  footer,
   justify = "flex-start",
   height,
   transparent = false,
@@ -28,15 +24,13 @@ export const CardBoxImg = ({
 }: Props) => {
   return (
     <StyledCardBoxImg
-      data-testid="sky-card"
+      data-testid="card-box-img"
       onClick={onAction}
       justify={justify}
       height={height}
       transparent={transparent}
     >
-      {header}
       {content}
-      {footer}
     </StyledCardBoxImg>
   );
 };
