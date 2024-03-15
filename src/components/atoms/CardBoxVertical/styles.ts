@@ -1,13 +1,13 @@
 import { Card, styled } from "@mui/material";
 import { CardJustify } from ".";
 
-interface CustomCardProps {
+interface CustomCardBoxVerticalProps {
   justify: CardJustify;
   height?: string;
   transparent?: boolean;
 }
 
-export const StyledCardBoxImg = styled(Card)<CustomCardProps>(
+export const StyledCardBoxVertical = styled(Card)<CustomCardBoxVerticalProps>(
   ({ height, onClick }) => ({
     width: "100%",
     height,

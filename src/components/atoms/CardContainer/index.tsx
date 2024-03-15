@@ -1,6 +1,6 @@
 import { StyledCardContainer } from "./styles";
 
-export type Skyjustify =
+export type CardJustify =
   | "flex-start"
   | "flex-end"
   | "center"
@@ -9,7 +9,7 @@ export type Skyjustify =
 
 interface Props {
   content?: React.ReactElement;
-  justify?: Skyjustify;
+  justify?: CardJustify;
   height?: string;
   transparent?: boolean;
   onAction?: (event: React.MouseEvent<HTMLDivElement>) => void;

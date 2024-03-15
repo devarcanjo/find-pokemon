@@ -1,8 +1,8 @@
 import { Card, styled } from "@mui/material";
-import { Skyjustify } from ".";
+import { CardJustify } from ".";
 
 interface CustomCardContainerProps {
-  justify: Skyjustify;
+  justify: CardJustify;
   height?: string;
   transparent?: boolean;
 }

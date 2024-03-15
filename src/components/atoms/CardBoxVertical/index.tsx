@@ -1,4 +1,4 @@
-import { StyledCardBoxImg } from "./styles";
+import { StyledCardBoxVertical } from "./styles";
 
 export type CardJustify =
   | "flex-start"
@@ -15,22 +15,20 @@ interface Props {
   onAction?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-export const CardBoxImg = ({
-  content,
+export const CardBoxVertical = ({
   justify = "flex-start",
   height,
   transparent = false,
   onAction,
 }: Props) => {
   return (
-    <StyledCardBoxImg
-      data-testid="card-box-img"
+    <StyledCardBoxVertical
+      data-testid="card-box-vertical"
       onClick={onAction}
       justify={justify}
       height={height}
       transparent={transparent}
     >
-      {content}
-    </StyledCardBoxImg>
+    </StyledCardBoxVertical>
   );
 };
