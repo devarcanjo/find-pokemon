@@ -35,7 +35,7 @@ export const CheckBox = ({
         }
         label={label}
         labelPlacement={labelPlacement}
-        data-testid="sky-check-box"
+        data-testid="check-box"
       />
     </FormControl>
   );
