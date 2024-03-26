@@ -29,7 +29,7 @@ export interface SkyIconProps {
   color?: IconColorType;
 }
 
-export const SkyIcon = ({ type, ...iconProps }: SkyIconProps) => {
+export const CardIcon = ({ type, ...iconProps }: SkyIconProps) => {
   const Icon = mapIconByType(type);
 
   return <Icon data-testid="sky-icon" {...iconProps} />;
